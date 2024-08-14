@@ -21,8 +21,8 @@
         @endforeach
       </div>
       <div class='paginate'>
-          {{$posts->links()}}
+          {{ $posts->links() }}
       </div>
-      <a href='/post/create'>create</a>
+      <a href='/posts/create'>create</a>
     </body>
     </html>

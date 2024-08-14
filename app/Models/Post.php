@@ -9,13 +9,15 @@ class Post extends Model
 
 {
     use HasFactory;
+    
+     protected $fillable = [
+       'title',
+       'body',
+];
 
     public function getPaginateByLimit(int $limit_count = 100)
    { 
     return $this->orderBy('updated_at', 'DESC')->Paginate($limit_count);
    }
-   protected fillable = [
-       'title',
-       'body',
-];
+  
 }
