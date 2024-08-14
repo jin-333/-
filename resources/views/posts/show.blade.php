@@ -8,7 +8,7 @@
         <title>Posts</title>
     </head>
     <body>
-    
+    <div class="edit"><a href="/posts/{{ $post->id }}/edit">edit</a></div>
     <h1 class="title">
         {{ $post->title }}
     </h1>
