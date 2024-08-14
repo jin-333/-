@@ -7,5 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
 {
-    use HasFactory;
+public function getByLimit(int $limit_count = 10)
+    {
+   return $this->orderBy('update_at', 'DESC')->limit($limit_count)->get();
+    }
 }
